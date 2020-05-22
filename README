@@ -1,0 +1,19 @@
+# Use:
+
+## CLI
+1. Navigate to `out/production/Yanport/`
+
+2. Launch Main with arguments in order:
+   grid-x grid-y start-x start-y start-direction instructions
+   i.e: `java com.ihoover.Main 10 10 5 5 N ADAGGA`
+
+## From source:
+Change elements of `main` methods' `uses` array, recompile and rerun.
+Example element: `new String[]{"10", "10", "5", "5", "N", "ADAGGA"}`
+
+
+# Assumptions:
+
+1. If given size x: 10 y: 10, grid is 10x10, not 11x11
+2. The vacuum will ignore `A` commands to out of it's grid
+   For example, when in position `0,0` facing `S`, `A` will be ignored
